@@ -1,0 +1,16 @@
+header{
+  border-bottom: 1px solid #9B9999;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.current-date{
+  font-style: initial;
+  padding: 12px 40px;
+  background-color: #DFD5D5;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin-right: 30px;
+}

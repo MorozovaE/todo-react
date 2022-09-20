@@ -1,0 +1,19 @@
+.weekDay{
+  border: none;
+  margin-bottom: 20px;
+  padding: 9px 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #D9D9D9;
+}
+.weekDay:hover{
+  background-color: #ead0d0; 
+}
+.weekDaysContainer{
+  width: 174px;
+  margin-top: 40px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
