@@ -40,10 +40,19 @@
 // todo.ediTask(1, "TEst3")
 ///////////////////////////////////////////////////////
 
+[
+  {"text": "Do this!", "priority": 2, "isCompleted": false, "date": "20.14.2002 18:00"},
+  {text: "Do this!", priority: 1, isCompleted: False, date: "20.14.2002 18:00"},
+  {text: "Do this!", priority: 2, isCompleted: False, date: "20.14.2002 18:00"},
+  {text: "Do this!", priority: 2, isCompleted: False, date: "20.14.2002 18:00"},
+  {text: "Do this!", priority: 1, isCompleted: False, date: "20.14.2002 18:00"},
+  {text: "Do this!", priority: 1, isCompleted: False, date: "20.14.2002 18:00"},
+]
+
 class Todo {
   constructor() {
     this.tasks = [];
-    this.completedTasks = [];
+    // this.completedTasks = [];
   }
 
   addTask(objTask) {

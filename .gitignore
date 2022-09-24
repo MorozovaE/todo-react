@@ -4,9 +4,12 @@
 /node_modules
 /.pnp
 .pnp.js
+# .jshintrc
+package-lock.json
 
 # testing
 /coverage
+src/components/test
 
 # production
 /build
