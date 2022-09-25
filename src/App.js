@@ -1,20 +1,22 @@
 import './App.css';
 import Header from './components/Header';
-import TaskList from './components/TaskList';
 import WeekPanel from './components/WeekPanel';
-import TestTabs from './components/test/TestTabs';
-
+import { TaskList } from './models/TaskList';
+// import {Task} from './models/Task'
+import Tasks from './components/Tasks';
 // 1 todoModel
 // 2 todoModel context
 
 function App() {
+
+  let tasks = new TaskList();
+
   return (
     <div className="App">
       <Header />
       <main>
         <WeekPanel />
-        <TaskList />
-        {/* <TestTabs/> */}
+        <Tasks/>
       </main>
     </div>
   );

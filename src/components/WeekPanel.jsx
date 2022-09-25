@@ -1,8 +1,7 @@
 import React from "react";
-import { useState, createContext } from "react";
+import { useState,createContext } from "react";
 import "./WeekPanel.css";
-import PropTypes from "prop-types";
-// var PropTypes = require("prop-types");
+import Tasks from "./Tasks";
 
 export const weekDay = [
   "Monday",
@@ -14,7 +13,8 @@ export const weekDay = [
   "Sunday",
   "All",
 ];
-                                                                                                                                                                                
+export const WeekContext = createContext();
+
 export default function WeekPanel() {
   const [currDay, setCurrDay] = useState("All");
 
@@ -33,25 +33,14 @@ export default function WeekPanel() {
       </button>
     );
   });
-
-  let renderWeekDaysTasks = weekDay.map((day, index) => {
-    return (
-      <p
-        key={index}
-        className={
-          "content " + (currDay === day ? "active-content" : "content")
-        }
-        onClick={() => toggleTab(day)}
-      >
-        {day}
-      </p>
-    );
-  });
-
+ 
   return (
     <>
+    <WeekContext.Provider value={currDay}>
       <div className="weekDaysContainer">{renderWeekDaysTab}</div>
-      <div>{renderWeekDaysTasks}</div>
+      {/* <div>{renderWeekDaysTasks}</div> */}
+      <Tasks/>
+    </WeekContext.Provider>
     </>
   );
 }

@@ -1,4 +1,4 @@
-export class taskObjecct{
+export class Task{
   constructor(text){
     this.text = text;
   }
